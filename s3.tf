@@ -5,7 +5,7 @@ resource "aws_s3_bucket" "b" {
     tags {
         Name = "mybucket-462281"
     }
-	policy = <<EOF {
+	policy {
 	{
     "Version": "2012-10-17",
     "Statement": [
