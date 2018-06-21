@@ -5,7 +5,8 @@ resource "aws_s3_bucket" "b" {
     tags {
         Name = "mybucket-462281"
     }
-	policy {
+	role = "s3-mybucket-role-462281"
+	/*policy {
 	{
     "Version": "2012-10-17",
     "Statement": [
@@ -17,8 +18,8 @@ resource "aws_s3_bucket" "b" {
         } 
     ] 
 	}
-	
 	}
+	*/
 	website {
     index_document = "index.html"
     error_document = "error.html"
